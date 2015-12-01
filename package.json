@@ -1,0 +1,16 @@
+{
+  "name": "rnd-gl-example",
+  "version": "1.0.0",
+  "description": "gl-react-native for Desktop",
+  "main": "index.osx.js",
+  "scripts": {
+    "start": "node_modules/react-native-desktop/packager/packager.sh",
+    "build": "curl 'http://localhost:8081/index.osx.bundle?platform=osx&dev=false&minify=true' -o RNGLDesktop/main.jsbundle"
+  },
+  "author": "Dmitry Loktev",
+  "license": "ISC",
+  "dependencies": {
+    "gl-react-native": "ptmt/gl-react-native",
+    "react-native-desktop": "ptmt/react-native-desktop"
+  }
+}
