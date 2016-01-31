@@ -3,8 +3,15 @@
 
 import React, {View, Text, Dimensions} from 'react-native-desktop';
 
-import GL from 'gl-react-native';
+import GL from 'gl-react';
+import { Surface } from "gl-react-native";
+
 import shaders, {lightShaderText} from './shaders';
+
+const HelloWorld = GL.createComponent(({time, resolution}) =>
+  <GL.Node shader={shaders.light} uniforms={{ time, resolution }}/>,
+  { displayName: "HelloGL" }
+);
 
 class RNGLDesktop extends React.Component {
   constructor() {
@@ -27,16 +34,22 @@ class RNGLDesktop extends React.Component {
     const { width, height } = Dimensions.get('window');
     return (
         <View style={{flex: 1}}>
-          <GL.View
+          <Surface
+            width={width}
+            height={height}
+            opaque={false}
+          >
+            <HelloWorld
+              time= {this.state.time}
+              resolution = {[width, height]} />
+          </Surface>
+          { /* <GL.View
             shader={shaders.light}
             opaque={true}
             width={width}
             height={height}
-            uniforms={{
-              time: this.state.time,
-              resolution: [width, height]
-            }}
-          />
+
+          /> */}
           <View style={{position: 'absolute', top: 50, left: 100, flex: 1, backgroundColor: 'transparent'}}>
             <Text style={{fontFamily: 'Monaco', color: '#ccc', fontSize: 10}}>{lightShaderText}</Text>
           </View>

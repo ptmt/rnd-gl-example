@@ -128,9 +128,9 @@
     NSMenuItem *containerItem = [[NSMenuItem alloc] init];
     NSMenu *rootMenu = [[NSMenu alloc] initWithTitle:@"" ];
     [containerItem setSubmenu:rootMenu];
-    [mainMenu addItem:containerItem];
+    //[mainMenu addItem:containerItem];
     [rootMenu addItemWithTitle:@"Quit RNGLDesktop" action:@selector(terminate) keyEquivalent:@"Q"];
-
+    [[NSApp mainMenu] addItem:containerItem];
 }
 
 - (id)firstResponder

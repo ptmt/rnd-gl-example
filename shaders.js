@@ -1,4 +1,4 @@
-const GL = require("gl-react-native");
+const GL = require("gl-react");
 
 const lightShaderText = `
 #ifdef GL_ES

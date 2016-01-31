@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0325C6A21C0C6F2500A6B483 /* libRNGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0325C6A11C0C6F1800A6B483 /* libRNGL.a */; };
 		038F30071BE377D1009A0F4C /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 038F30011BE3779A009A0F4C /* libRCTImage.a */; };
-		038F30091BE4FA15009A0F4C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 038F30081BE4FA15009A0F4C /* main.jsbundle */; };
 		039780D31BD79C7000452D23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039780D21BD79C7000452D23 /* AppDelegate.m */; };
 		039780D61BD79C7000452D23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 039780D51BD79C7000452D23 /* main.m */; };
 		039780D81BD79C7000452D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039780D71BD79C7000452D23 /* Assets.xcassets */; };
@@ -75,7 +74,6 @@
 /* Begin PBXFileReference section */
 		0325C6961C0C6F1800A6B483 /* RNGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGL.xcodeproj; path = "node_modules/gl-react-native/osx/RNGL.xcodeproj"; sourceTree = "<group>"; };
 		038F2FFC1BE3779A009A0F4C /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "node_modules/react-native-desktop/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
-		038F30081BE4FA15009A0F4C /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		039780CE1BD79C7000452D23 /* RNGLDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGLDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039780D11BD79C7000452D23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		039780D21BD79C7000452D23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 		039780D01BD79C7000452D23 /* RNGLDesktop */ = {
 			isa = PBXGroup;
 			children = (
-				038F30081BE4FA15009A0F4C /* main.jsbundle */,
 				039780D11BD79C7000452D23 /* AppDelegate.h */,
 				039780D21BD79C7000452D23 /* AppDelegate.m */,
 				039780D71BD79C7000452D23 /* Assets.xcassets */,
@@ -355,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				039780D81BD79C7000452D23 /* Assets.xcassets in Resources */,
-				038F30091BE4FA15009A0F4C /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +460,7 @@
 				);
 				INFOPLIST_FILE = RNGLDesktop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elephant.RNGLDesktop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,7 +478,7 @@
 				);
 				INFOPLIST_FILE = RNGLDesktop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elephant.RNGLDesktop;
 				PRODUCT_NAME = "$(TARGET_NAME)";

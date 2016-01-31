@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "gl-react-native": "ptmt/gl-react-native",
-    "react-native-desktop": "ptmt/react-native-desktop"
+    "gl-react": "*",
+    "react-native-desktop": "0.3.7"
   }
 }
